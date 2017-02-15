@@ -1,15 +1,15 @@
-package com.kindergarten;
+package com.kindergarten.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import cn.bmob.v3.listener.BmobCallback;
+import com.kindergarten.R;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
     }
 }
