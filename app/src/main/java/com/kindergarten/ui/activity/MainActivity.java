@@ -1,7 +1,9 @@
-package com.kindergarten;
+package com.kindergarten.ui.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.kindergarten.R;
 
 import cn.bmob.v3.listener.BmobCallback;
 

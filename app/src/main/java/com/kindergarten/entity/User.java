@@ -5,7 +5,7 @@ import cn.bmob.v3.BmobUser;
 /**
  * Created by Administrator on 2017/2/15 0015
  */
-public class KindergartenUser extends BmobUser {
+public class User extends BmobUser {
     private String childName;
     private Boolean childSex;
     private Integer childAge;

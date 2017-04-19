@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Kindergarten</string>
+    <string name="tv_load">努力加载中......</string>
 </resources>
