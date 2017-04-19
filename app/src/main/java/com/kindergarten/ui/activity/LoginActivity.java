@@ -22,6 +22,7 @@ import com.nineoldandroids.animation.AnimatorSet;
 import com.nineoldandroids.animation.ObjectAnimator;
 import com.nineoldandroids.view.ViewHelper;
 import com.rengwuxian.materialedittext.MaterialEditText;
+import com.tbruyelle.rxpermissions.RxPermissions;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -132,12 +133,12 @@ public class LoginActivity extends BaseActivity<LoginPresenter> implements Login
     @Override
     protected void onResume() {
         super.onResume();
-//        RxPermissions rxPermissions = new RxPermissions(this);
-//        rxPermissions.request
-//                (Manifest.permission.CAMERA,
-//                        Manifest.permission.READ_PHONE_STATE, Manifest.permission.WRITE_EXTERNAL_STORAGE)
-//                .subscribe(aBoolean -> {
-//                    if (!aBoolean) {
+        RxPermissions rxPermissions = new RxPermissions(this);
+        rxPermissions.request
+                (Manifest.permission.CAMERA,
+                        Manifest.permission.READ_PHONE_STATE, Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                .subscribe(aBoolean -> {
+                    if (!aBoolean) {
 //                        DialogUtil.getInstance(this)
 //                                .setPositiveVisible(true)
 //                                .setMessage("请务必给予应用相应的权限")
@@ -160,8 +161,8 @@ public class LoginActivity extends BaseActivity<LoginPresenter> implements Login
 //                                    d = null;
 //                                })
 //                                .create().show();
-//                    }
-//                });
+                    }
+                });
     }
 
     @OnClick({R.id.btn_login, R.id.tv_forget_password, R.id.tv_register})

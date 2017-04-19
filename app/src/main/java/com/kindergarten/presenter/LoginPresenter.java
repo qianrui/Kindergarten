@@ -1,16 +1,11 @@
 package com.kindergarten.presenter;
 
-import android.content.Intent;
 import android.text.TextUtils;
-import android.widget.Toast;
 
 import com.kindergarten.presenter.base.BasePresenter;
-import com.kindergarten.ui.activity.LoginActivity;
-import com.kindergarten.ui.activity.MainActivity;
 import com.kindergarten.util.ValidatorUtil;
 import com.kindergarten.view.LoginView;
 
-import org.json.JSONObject;
 
 import cn.bmob.v3.BmobUser;
 import cn.bmob.v3.exception.BmobException;
