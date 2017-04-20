@@ -15,14 +15,13 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="@dimen/public_margin_48dp"
         android:gravity="center_horizontal"
-        android:orientation="vertical"
-        android:visibility="gone">
+        android:orientation="vertical">
 
         <ImageView
 
             android:layout_width="@dimen/public_margin_128dp"
             android:layout_height="@dimen/public_margin_128dp"
-            android:src="@mipmap/icon_logo2" />
+            android:src="@mipmap/icon_logo" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,7 +38,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginTop="@dimen/public_margin_16dp"
         android:orientation="vertical"
-        android:visibility="visible">
+        android:visibility="invisible">
 
         <LinearLayout
             android:layout_width="match_parent"

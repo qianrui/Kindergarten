@@ -19,7 +19,7 @@
         <ImageView
             android:layout_width="@dimen/public_margin_67dp"
             android:layout_height="@dimen/public_margin_67dp"
-            android:src="@mipmap/icon_logo2" />
+            android:src="@mipmap/icon_logo" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

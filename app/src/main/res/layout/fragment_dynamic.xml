@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F8F8"
+    tools:context="com.kindergarten.ui.fragment.DynamicFragment">
+
+    <!--标题-->
+    <include layout="@layout/head_green_view"/>
+
+    <com.kindergarten.widgets.StateLayout
+        android:id="@+id/statelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.liaoinstan.springview.widget.SpringView
+            android:id="@+id/springview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--banner-->
+                    <ImageView
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/cover_default_over_one_years_old" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignBottom="@+id/banner"
+                        android:background="@mipmap/ic_timeline_head_shadow"
+                        android:paddingLeft="@dimen/public_margin_8dp"
+                        android:paddingRight="@dimen/public_margin_8dp">
+                        <ImageView
+                            android:id="@+id/iv_avatar"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:scaleType="centerCrop"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/cover_default_over_one_years_old" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/iv_avatar"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/public_margin_16dp"
+                            android:textColor="@color/white"
+                            android:text="和老师一起记录宝宝成长吧"/>
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_below="@+id/banner"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:id="@+id/lin_msg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/banner"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/public_margin_8dp"
+                        android:paddingLeft="@dimen/public_margin_10dp"
+                        android:background="@color/line_gray"
+                        android:paddingRight="@dimen/public_margin_10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@mipmap/bg_accelerator2_normal"
+                            android:gravity="center"
+                            android:text="园内概况"
+                            android:textColor="#647A87" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/public_margin_20dp"
+                            android:layout_weight="1"
+                            android:background="@mipmap/bg_accelerator1_normal"
+                            android:gravity="center"
+                            android:text="一周菜谱"
+                            android:textColor="#977577" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/public_margin_20dp"
+                            android:layout_weight="1"
+                            android:background="@mipmap/bg_accelerator2_normal"
+                            android:gravity="center"
+                            android:text="班级相册"
+                            android:textColor="#647A87" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/public_margin_20dp"
+                            android:layout_weight="1"
+                            android:background="@mipmap/bg_accelerator1_normal"
+                            android:gravity="center"
+                            android:text="宝宝信息"
+                            android:textColor="#977577" />
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/lin_msg"
+                        android:paddingBottom="@dimen/public_margin_20dp">
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#E2E2E2"
+                            android:layout_marginLeft="@dimen/public_margin_30dp"/>
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_dynamic"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/transparent"
+                            tools:listitem="@layout/item_dynamic"/>
+                    </FrameLayout>
+
+
+                </RelativeLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </com.liaoinstan.springview.widget.SpringView>
+    </com.kindergarten.widgets.StateLayout>
+</LinearLayout>

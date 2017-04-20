@@ -22,18 +22,18 @@ public class LoginPresenter extends BasePresenter<LoginView> {
     }
 
     public void login(String telephone, String password) {
-        if (TextUtils.isEmpty(telephone)) {
-            mvpView.error("手机号码不能为空！");
-            return;
-        }
-        if (!ValidatorUtil.isMobile(telephone)) {
-            mvpView.error("手机号码输入有误！");
-            return;
-        }
-        if (TextUtils.isEmpty(password)) {
-            mvpView.error("密码不能为空！");
-            return;
-        }
+//        if (TextUtils.isEmpty(telephone)) {
+//            mvpView.error("手机号码不能为空！");
+//            return;
+//        }
+//        if (!ValidatorUtil.isMobile(telephone)) {
+//            mvpView.error("手机号码输入有误！");
+//            return;
+//        }
+//        if (TextUtils.isEmpty(password)) {
+//            mvpView.error("密码不能为空！");
+//            return;
+//        }
         mvpView.showProgressBar("正在登陆请稍后");
         BmobUser bu2 = new BmobUser();
         bu2.setUsername("sendi");

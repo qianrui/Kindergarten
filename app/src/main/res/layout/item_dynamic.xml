@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:paddingLeft="@dimen/public_margin_8dp"
+    android:paddingRight="@dimen/public_margin_8dp">
+
+
+    <RelativeLayout
+        android:id="@+id/rel_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#F8F8F8"
+        android:layout_marginTop="@dimen/public_margin_16dp"
+        android:paddingBottom="@dimen/public_margin_4dp">
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textStyle="bold"
+            android:textColor="@color/font_black"
+            android:layout_marginLeft="2dp"
+            android:textSize="@dimen/text_20"/>
+        <TextView
+            android:id="@+id/tv_date2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2月"
+            android:textColor="@color/font_deep_gray"
+            android:layout_marginLeft="6dp"
+            android:textSize="@dimen/text_16"
+            android:layout_alignBottom="@+id/tv_date"
+            android:layout_toRightOf="@+id/tv_date"/>
+        <TextView
+            android:id="@+id/tv_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_date"
+            android:text="星期一"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_12"
+            android:gravity="center"
+            android:layout_marginTop="2dp"
+            android:background="@mipmap/bg_festival_5ec936"
+            android:paddingLeft="@dimen/public_margin_10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingRight="@dimen/public_margin_10dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_corners_slide_gray"
+        android:layout_toRightOf="@+id/rel_date"
+        android:layout_marginTop="@dimen/public_margin_12dp"
+        android:padding="4dp">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/public_margin_8dp"
+            android:layout_marginLeft="@dimen/public_margin_4dp"
+            android:textSize="@dimen/text_14"
+            android:text="这是内容....."/>
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/public_margin_4dp"
+            android:layout_marginTop="@dimen/public_margin_10dp"
+            android:layout_marginBottom="@dimen/public_margin_10dp"
+            android:textSize="@dimen/text_12"
+            android:text="小花老师， 04-20 15:30"/>
+    </LinearLayout>
+
+</RelativeLayout>

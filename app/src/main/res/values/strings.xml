@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Kindergarten</string>
     <string name="tv_load">努力加载中......</string>
+    <string name="dynamic">动态</string>
+    <string name="news">育儿</string>
+    <string name="message">消息</string>
+    <string name="more">更多</string>
+    <string name="tv_shop_empty">您的购物车还没有收藏任何东西,\n赶紧去逛逛吧！</string>
+    <string name="tv_search_empty">亲爱的,什么都没搜到哦!</string>
+    <string name="tv_net_error">当前网络不可用,还是稍会再试试吧</string>
+    <string name="tv_empty">该页面竟然是空的,好尴尬啊!</string>
+
 </resources>
